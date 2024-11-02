@@ -1,0 +1,146 @@
+ 
+.video-card{
+    margin-right: 3%;
+    flex-basis: 89%;
+}
+
+.video-card > iframe{
+    width:100%;
+    aspect-ratio:3/1.6;
+    border-radius: 15px;
+}
+
+.channel-info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.75rem;
+    margin: 5px;
+    padding-bottom: 5px;
+}
+
+ h1{
+    font-size: 0.85em;
+    margin:5px;
+}
+
+.left > a > div {
+    font-size: 0.6rem;
+    color: #2a2a2a;
+}
+
+.channel-profile{
+    height:28.5px;
+    width: 28.5px;
+    border-radius: 50%;
+}
+
+.channel-name{
+    margin-right: 15px;
+}
+
+.subscribe{
+    font-size: 0.6rem;
+    padding:6px 10px;
+    border-radius: 20px;
+    background-color: black;
+    color: #ffffff;
+}
+
+.like{
+    border-right: 0.5px solid black;
+    padding-right: 7.5px;
+    display: flex;
+    align-items: center;
+}
+
+.like > span{
+    font-size: 0.55rem;
+    margin:0 4px 0 2px;
+}
+
+
+.right > div{
+    display: flex;
+    align-items: center;
+    padding:2.5px;
+    background-color: #eeeeee;
+    border-radius: 20px;
+    margin-left: 10px;
+}
+
+.right > div > a{
+    margin: 0px 2.5px;
+    padding: 2px;
+    font-size: 0.7rem;
+}
+
+.space{
+    height:500px;
+    background-color:aquamarine;
+}
+
+.description > div{
+    font-size: 0.7rem;
+    font-weight: bold;
+    margin: 5px 0;
+}
+
+.description{
+    font-size: 0.55rem;
+    margin:7px 0 15px 0;
+}
+
+.comment{
+    display: flex;
+    margin:10px 20px;
+}
+
+.comment > img {
+    height: 22.5px;
+    width: 22.5px;
+    margin-right: 5px;
+    border-radius: 50%;
+}
+
+.comment> div > h5{
+font-weight: 100;
+font-size:xx-small;
+}
+
+.comment > div > a{
+    font-size: 0.75rem;
+    margin-right: 2px;
+    color: #5a5a5a;
+}
+
+.comment > div > span{
+    font-size: 0.6rem;
+    margin-right: 4px;
+}
+
+.comm{
+    display: block;
+    margin:2px 0;
+}
+
+.name{
+    font-size:0.7rem;
+    font-weight: bold;
+    margin-top: 4px;
+}
+
+.comment-count{
+    font-size: 0.72rem;
+    margin-top: 10px;
+}
+
+@media (max-width:800px){
+    .video-card .video-play{
+        width:100%;
+        height:50vw;
+    }
+    .video-card .right{
+        display: none;
+    }
+}

@@ -1,0 +1,20 @@
+.video-page{
+    display: flex;
+}
+
+.leftpage{
+    width:78%;
+}
+
+.rightpage{
+    width:32%;
+}
+
+@media (max-width:800px){
+    .leftpage{
+        flex-basis: 100%;
+    }
+    .rightpage{
+        display: none;
+    }
+}

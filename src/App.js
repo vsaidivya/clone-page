@@ -1,25 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import Navbar from './Navbar/Navbar'
+import Sidebar from './Sidebar/Sidebar'
+import Container from './Container/Container'
+import './App.css'
 
-function App() {
+export default function App() {
+
+  const [ismenu , setismenu] = React.useState(true)
+  const [category , setcategory] = React.useState(0)
+  const [videoplay , setvideoplay] = React.useState(false)
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <div className='navbar-sec'><Navbar key={0} setismenu={setismenu} setvideoplay={setvideoplay}  /></div>
+      <div className='main-sec'>
+      <div className='sidebar-sec'><Sidebar key={1} ismenu={ismenu} setcategory={setcategory} category={category} /></div>
+      <div className='videos-sec'><Container key={2} ismenu={ismenu} setismenu={setismenu} setvideoplay={setvideoplay} videoplay={videoplay} category={category}/></div>
+      </div>
     </div>
-  );
+  )
 }
-
-export default App;

@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+}
+
+.Navbar{
+    display: flex;
+    padding: 7px;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow:0px 1.5px 1px gainsboro;
+    position:fixed;
+    width:100%;
+    background-color: white;
+}
+
+.left{
+    display: flex;
+    align-items: center;
+}
+
+.left > a{
+    margin-left: 5px;
+}
+
+.left .name-logo{
+    font-size: 0.65rem;
+}
+
+.menu-logo{
+    color: #5a5a5a;
+    margin-left: 8px;
+    padding: 2px 2px 0px 2px;
+}
+
+.menu-logo:hover{
+    cursor: pointer;
+}
+
+.youtube{
+    display: flex;
+    align-items: center;
+}
+
+.youtube-logo{
+    color: rgb(174, 0, 0);
+    font-size: 1.2em;
+    margin-left: 15px;
+}
+
+.youtube > a{
+    margin-left: 5px;
+    font-size: 0.75rem;
+}
+
+
+.search{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4px 5px;
+    border-radius: 25px;
+    width: 300px;
+    border: 0.5px solid gainsboro;
+    box-shadow: 0px 0.25px gainsboro;
+}
+
+.search-inp{
+    border: none;
+    font-size: 0.5rem;
+}
+
+.search-inp:focus {
+    outline: none; /* Removes the default focus outline */
+    border: none;  /* Removes the border */
+}
+
+.search-logo{
+    size: 0.8rem;
+}
+
+
+.search-inp:active{
+    border: none;
+}
+
+.search-logo{
+    color:#5a5a5a;
+    font-size: 0.75rem;
+}
+
+.right{
+    display: flex;
+    align-items: center;
+}
+
+
+.right>a{
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
+    color:#5a5a5a;
+}
+
+.video-logo{
+    color: brown;
+}
+
+.window-logo{
+    font-size: 0.7rem;
+}
+
+.bell-logo{
+    font-size: 0.85rem;
+}
+
+@media (max-width:700px){
+    .menu-logo{
+        display: none;
+    }
+    .right{
+        visibility: hidden;
+    }
+    .right .profile-logo{
+        visibility: visible;
+        width: 30px;
+    }
+    .left{
+        width: 300px;
+    }
+    .search .search-inp{
+        width:90px;
+    }
+    .left .name-logo{
+        display: none;
+    }
+}
+
+/*vbnm*/
